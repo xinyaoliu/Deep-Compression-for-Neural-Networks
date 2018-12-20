@@ -8,9 +8,9 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from tqdm import tqdm
 
-from models import LeNet_5
-from models import LeNet_5_CIFAR
-from huffmancoding import huffman_encode_model
+from utils.models import LeNet_5
+from utils.models import LeNet_5_CIFAR
+from utils.huffmancoding import huffman_encode_model
 from sklearn.cluster import KMeans
 from scipy.sparse import csc_matrix, csr_matrix
 
