@@ -5,4 +5,5 @@ Some parameters:
 --batchsize  
 --epochs  
 --sensitivity  
---bits
+--bits  
+Please run on the latest PyTorch version (PyTorch 1.0).
