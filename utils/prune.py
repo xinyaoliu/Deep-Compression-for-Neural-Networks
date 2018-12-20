@@ -4,7 +4,9 @@ import torch
 from torch.nn import Parameter
 from torch.nn.modules.module import Module
 import torch.nn.functional as F
-
+"""
+ref: https://github.com/mightydeveloper/Deep-Compression-PyTorch.git
+"""
 class PruningModule(Module):
     def prune_by_std(self, s=0.25):
         for name, module in self.named_modules():
