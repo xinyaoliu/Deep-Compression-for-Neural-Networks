@@ -1,6 +1,4 @@
 import argparse
-import os
-
 import time
 import numpy as np
 import torch
@@ -78,7 +76,6 @@ if args.datasets == 'mnist':
 elif args.datasets == 'cifar':
     model = LeNet_5_CIFAR(mask=True).to(device)
 
-print (model)
 
 optimizer = optim.Adam(model.parameters(), lr=0.01, weight_decay=0.0001)
 initial_optimizer_state_dict = optimizer.state_dict()
